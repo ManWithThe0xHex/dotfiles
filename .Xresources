@@ -6,9 +6,9 @@ Xft.hintstyle:  hintmedium
 URxvt.termName: rxvt
 URxvt*depth: 32
 URxvt.transparent: false
-URxvt.font: xft:Iosevka:size=20
+URxvt.font: xft:IosevkaTerm Nerd Font Mono:size=19
 URxvt.scrollBar: false
-URxvt.iconFile: .rexim/icons/terminal-icon.png
+URxvt.iconFile: .rev1nsane/icons/terminal-icon.png
 
 ! Gruber-Darker
 URxvt*foreground: #e4e4ef
@@ -57,10 +57,21 @@ URxvt*color15: #EEEEEC
 ! URxvt*background: #EDEDED
 ! URxvt*foreground: #2E3436
 
-URxvt.perl-ext-common:  resize-font,matcher
+URxvt.perl-ext-common:  default,selection-to-clipboard,font-size,matcher,eval
+
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
-URxvt.keysym.C-minus:  resize-font:smaller
-URxvt.keysym.C-equal:  resize-font:bigger
-URxvt.keysym.C-0:      resize-font:reset
+URxvt.keysym.C-minus: font-size:decrease
+URxvt.keysym.C-equal: font-size:increase
+URxvt.keysym.C-plus:  font-size:increase
+URxvt.keysym.C-0:     font-size:reset
+
+! disable ISO
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.C-S-C: selection-to-clipboard:copy
+URxvt.keysym.C-S-V: eval:paste_clipboard
+URxvt.keysym.M-v:
+URxvt.keysym.M-V:
