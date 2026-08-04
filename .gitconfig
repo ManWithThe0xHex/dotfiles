@@ -1,11 +1,24 @@
+[init]
+    defaultBranch = main
+
 [user]
-	email = reximkut@gmail.com
-	name = rexim
+    email = 7944822+ManWithThe0xHex@users.noreply.github.com
+    name = jounior
+
+[includeIf "gitdir:~/dev/jounior/"]
+    path = ~/.gitconfig-jounior
+
+[includeIf "gitdir:~/Documents/knowledge/"]
+    path = ~/.gitconfig-jounior
+
+[includeIf "gitdir:~/dev/1nsxn3/"]
+    path = ~/.gitconfig-1nsxn3
+
 [merge]
-	conflictStyle = diff3
+    conflictStyle = zdiff3
+
 [magit]
-	hideCampaign = true
+    hideCampaign = true
+
 [alias]
     tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
-[init]
-	defaultBranch = main
