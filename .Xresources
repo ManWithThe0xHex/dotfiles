@@ -10,6 +10,9 @@ URxvt.font: xft:IosevkaTerm Nerd Font Mono:size=19
 URxvt.scrollBar: false
 URxvt.iconFile: .rev1nsane/icons/terminal-icon.png
 
+
+URxvt*internalBorder: 15
+
 ! Gruber-Darker
 URxvt*foreground: #e4e4ef
 URxvt*background: #181818
