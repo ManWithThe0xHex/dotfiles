@@ -51,6 +51,8 @@ bar {
     }
 }
 
+bindsym Print exec --no-startup-id flameshot gui
+
 #for_window [class=".*"] title_format ""
 
 # -----------------------------
