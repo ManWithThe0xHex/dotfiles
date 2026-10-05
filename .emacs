@@ -168,12 +168,12 @@
 (setq dired-mouse-drag-files t)
 
 ;;; helm
-(rc/require 'helm 'helm-git-grep 'helm-ls-git)
+;;;(rc/require 'helm 'helm-git-grep 'helm-ls-git)    // Obsolete helm package
 
 (setq helm-ff-transformer-show-only-basename nil)
 
 (global-set-key (kbd "C-c h t") 'helm-cmd-t)
-(global-set-key (kbd "C-c h g g") 'helm-git-grep)
+;;;(global-set-key (kbd "C-c h g g") 'helm-git-grep) // Obsolete helm package
 (global-set-key (kbd "C-c h g l") 'helm-ls-git-ls)
 (global-set-key (kbd "C-c h f") 'helm-find)
 (global-set-key (kbd "C-c h a") 'helm-org-agenda-files-headings)
