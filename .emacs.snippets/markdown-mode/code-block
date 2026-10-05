@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: code-block
+# key: code
+# type: command
+# binding: C-x c
+# --
+(if (region-active-p)
+    (yas-expand-snippet "\\`\\`\\`$1\n`yas-selected-text`\n\\`\\`\\`$0")
+  (yas-expand-snippet "\\`\\`\\`$1\n$0\n\\`\\`\\`"))
